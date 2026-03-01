@@ -1,11 +1,10 @@
 import fetch from "node-fetch";
-import cheerio from "cheerio";
+import { load } from "cheerio";
 
 const BASE_URL = "https://vegamovies.mobile/";
 
 export default async function handler(req, res) {
   try {
-    // page param: default = 1
     const page = parseInt(req.query.page || "1", 10);
 
     if (isNaN(page) || page < 1) {
@@ -42,7 +41,7 @@ async function scrapePage(page) {
   }
 
   const html = await response.text();
-  const $ = cheerio.load(html);
+  const $ = load(html);
 
   const posts = [];
 
