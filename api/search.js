@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     if (pageNumber === 1 && isCIDSearch(q)) {
       posts.push({
         title: "C.I.D (1998) Complete Series",
-        url: null,
+        url: "https://m.media-amazon.com/",
         image: "https://m.media-amazon.com/images/M/MV5BYWQyNzkxMDItZmNiNS00NTRkLTk0NTYtMWEzOTg4YjYwNTE0XkEyXkFqcGc@._V1_FMjpg_UY1639_.jpg",
         date: null,
         stream_id: "tt0401916",
