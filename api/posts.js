@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import { load } from "cheerio";
 
-const BASE_URL = "https://vegamoviehd.in/";
+const BASE_URL = "https://vegamoveis.click/";
 
 export default async function handler(req, res) {
   try {
